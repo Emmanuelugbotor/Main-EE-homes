@@ -74,6 +74,20 @@
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
 
+    var owl = $(".custom_team_carousel");
+    owl.owlCarousel({
+      items: 1,
+      margin: 10,
+      loop: true,
+      nav: true, 
+      singleItem: true,
+      autoplay: true,
+      smartSpeed: 1500,
+      navText : [
+        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+    ],
+    });
 
     // Team carousel
     $(".team-carousel").owlCarousel({
@@ -82,6 +96,8 @@
         dots: false,
         loop: true,
         nav : true,
+        singleItem: true,
+        items: 1,
         navText : [
             '<i class="fa fa-angle-left" aria-hidden="true"></i>',
             '<i class="fa fa-angle-right" aria-hidden="true"></i>'
